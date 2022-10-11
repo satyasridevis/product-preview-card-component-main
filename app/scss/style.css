@@ -162,4 +162,51 @@ a:hover {
 .attribution a {
   color: #3c8067;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+  .product-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    background-color: none;
+    height: auto;
+    width: 90%;
+    top: 10px;
+    bottom: 10px;
+  }
+  .product-container__image img {
+    height: 280px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .product-container__image__desc {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .product-container__image__desc h1 {
+    font-size: 1rem;
+    background-color: palegreen;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    font-family: "Fraunces", serif;
+  }
+  .attribution a {
+    color: #3c8067;
+  }
+}
 /*# sourceMappingURL=style.css.map */

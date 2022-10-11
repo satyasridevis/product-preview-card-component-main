@@ -110,3 +110,55 @@
     color: $darkCyan;
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-container {
+    flex-direction: column;
+    gap: 0;
+    background-color: none;
+    height: auto;
+    width: 90%;
+    top: 10px;
+    bottom: 10px;
+
+    &__image {
+      img {
+        height: 280px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: $border-rds;
+        border-top-right-radius: $border-rds;
+        border-bottom-left-radius: 0;
+      }
+      &__desc {
+        width: 90%;
+        height: auto;
+
+        text-align: center;
+
+        h1 {
+          font-size: 1rem;
+
+          background-color: palegreen;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    font-family: $font-fraun;
+    a {
+      color: $darkCyan;
+    }
+  }
+}

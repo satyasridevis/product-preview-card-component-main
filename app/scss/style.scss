@@ -1,0 +1,112 @@
+@import "variables";
+@import "globals";
+
+.product-container {
+  background-color: $white;
+  width: 596px;
+  height: 448px;
+  position: relative;
+  top: 100px;
+  margin: auto;
+  border-radius: $border-rds;
+  flex-direction: row;
+
+  &__image {
+    img {
+      height: 448px;
+      width: calc(596px / 2);
+      border-bottom-left-radius: $border-rds;
+      border-top-left-radius: $border-rds;
+    }
+  }
+  &__desc {
+    height: 448px;
+    width: calc(596px / 2);
+    border-bottom-right-radius: $border-rds;
+    border-top-right-radius: $border-rds;
+    flex-direction: column;
+    padding: 28px;
+
+    p:nth-child(1) {
+      text-transform: uppercase;
+      font-family: $font-mont;
+      color: $darkGrayishBlue;
+      letter-spacing: 5px;
+      font-size: 13px;
+      // background-color: aquamarine;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+    p:nth-child(3) {
+      color: $darkGrayishBlue;
+      font-family: $font-mont;
+      margin-top: 0;
+      line-height: 1.6;
+      font-weight: 500;
+      // background-color: pink;
+      padding-bottom: 5px;
+    }
+    h1 {
+      font-family: $font-fraun;
+      font-size: 2.1rem;
+      line-height: 1;
+      margin-top: 0;
+      margin-bottom: 28px;
+      font-weight: 700;
+      // background-color: palegreen;
+    }
+
+    .price {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 25px;
+
+      p:nth-child(1) {
+        color: $darkCyan;
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 0;
+        font-family: $font-fraun;
+      }
+      p:nth-child(2) {
+        color: $darkGrayishBlue;
+        position: relative;
+        bottom: 14px;
+        text-decoration: line-through;
+        font-family: $font-mont;
+      }
+    }
+    .addcart {
+      display: flex;
+      background-color: $darkCyan;
+      border: 0;
+      padding: 16px 43px;
+      border-radius: $border-rds;
+      color: $white;
+      font-family: $font-mont;
+      font-weight: 600;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      bottom: 5px;
+      &:hover {
+        cursor: pointer;
+        color: $white;
+        background-color: darken($darkCyan, 10%);
+      }
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  left: 38%;
+  font-size: 12px;
+  font-family: $font-fraun;
+  a {
+    color: $darkCyan;
+  }
+}

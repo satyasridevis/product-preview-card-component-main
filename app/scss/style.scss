@@ -26,6 +26,7 @@
     border-top-right-radius: $border-rds;
     flex-direction: column;
     padding: 28px;
+    background-color: $white;
 
     p:nth-child(1) {
       text-transform: uppercase;
@@ -158,7 +159,7 @@
     text-align: center;
     font-size: 12px;
     font-family: $font-fraun;
-    background-color: aquamarine;
+
     a {
       color: $darkCyan;
     }

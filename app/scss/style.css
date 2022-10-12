@@ -33,7 +33,6 @@ a:hover {
 }
 
 .product-container {
-  background-color: white;
   width: 596px;
   height: 448px;
   position: relative;
@@ -118,7 +117,7 @@ a:hover {
 .product-container__desc .price p:nth-child(2) {
   color: #6c7289;
   position: relative;
-  bottom: 14px;
+  bottom: 16px;
   text-decoration: line-through;
   font-family: "Montserrat", sans-serif;
 }
@@ -173,15 +172,20 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 0;
-    background-color: none;
-    height: auto;
+    -webkit-column-gap: 0;
+            column-gap: 0;
     width: 90%;
-    top: 10px;
-    bottom: 10px;
+    height: 690px;
+    top: 0;
+    bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .product-container__image {
+    height: 285px;
   }
   .product-container__image img {
-    height: 280px;
+    height: 285px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -189,21 +193,24 @@ a:hover {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
   }
-  .product-container__image__desc {
-    width: 90%;
-    height: auto;
-    text-align: center;
+  .product-container__desc {
+    width: 100%;
+    padding: 35px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    background-color: white;
   }
-  .product-container__image__desc h1 {
-    font-size: 1rem;
-    background-color: palegreen;
+  .product-container__desc h1 {
+    font-size: 1.9rem;
   }
   .attribution {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
+    text-align: center;
     font-size: 12px;
     font-family: "Fraunces", serif;
+    background-color: aquamarine;
   }
   .attribution a {
     color: #3c8067;

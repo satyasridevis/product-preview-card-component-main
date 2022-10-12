@@ -2,7 +2,7 @@
 @import "globals";
 
 .product-container {
-  background-color: $white;
+  // background-color: $white;
   width: 596px;
   height: 448px;
   position: relative;
@@ -72,7 +72,7 @@
       p:nth-child(2) {
         color: $darkGrayishBlue;
         position: relative;
-        bottom: 14px;
+        bottom: 16px;
         text-decoration: line-through;
         font-family: $font-mont;
       }
@@ -119,44 +119,46 @@
 
   .product-container {
     flex-direction: column;
-    gap: 0;
-    background-color: none;
-    height: auto;
+    column-gap: 0;
+
     width: 90%;
-    top: 10px;
-    bottom: 10px;
+    height: 690px;
+    top: 0;
+    bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 
     &__image {
+      height: 285px;
       img {
-        height: 280px;
+        height: 285px;
         width: 100%;
         object-fit: cover;
         border-top-left-radius: $border-rds;
         border-top-right-radius: $border-rds;
         border-bottom-left-radius: 0;
       }
-      &__desc {
-        width: 90%;
-        height: auto;
-
-        text-align: center;
-
-        h1 {
-          font-size: 1rem;
-
-          background-color: palegreen;
-        }
+    }
+    &__desc {
+      width: 100%;
+      padding: 35px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: $border-rds;
+      background-color: $white;
+      h1 {
+        font-size: 1.9rem;
       }
     }
   }
-
   .attribution {
-    position: absolute;
-
+    position: relative;
+    // display: none;
     bottom: 0;
     left: 0;
+    text-align: center;
     font-size: 12px;
     font-family: $font-fraun;
+    background-color: aquamarine;
     a {
       color: $darkCyan;
     }

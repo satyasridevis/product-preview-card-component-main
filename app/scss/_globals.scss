@@ -17,6 +17,10 @@ body {
   font-size: 0.875rem;
 
   min-width: 100vmin;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a,

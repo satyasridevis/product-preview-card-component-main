@@ -18,9 +18,9 @@ body {
 
   min-width: 100vmin;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
+  display:grid;
+  place-content:center;
 }
 
 a,
